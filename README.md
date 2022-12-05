@@ -1,7 +1,7 @@
 # Layer-2-Light-Clients
 
 ## Abstract
-Ethereum light clients are known to suffer from a probabilistic security model, but they are widely assumed to be secure under normal operating conditions. [^1]. The idea is to have RPC-based wallet completely trustless by first syncing to the latest header of the beacon chain and then use the eth_getProof endpoint to get the balance plus a proof that it is actually part of the root hash that we obtained. Using Merkle Inclusion proofs to the latest block header allows us to verify that the data is correct. 
+Ethereum light clients are known to suffer from a probabilistic security model, but they are widely assumed to be secure under normal operating conditions [^1]. The idea is to have RPC-based wallet completely trustless by first syncing to the latest header of the beacon chain and then use the eth_getProof endpoint to get the balance plus a proof that it is actually part of the root hash that we obtained. Using Merkle Inclusion proofs to the latest block header allows us to verify that the data is correct. 
 
 
 ## Scope
