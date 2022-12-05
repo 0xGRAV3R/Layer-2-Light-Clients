@@ -1,8 +1,7 @@
 # Layer-2-Light-Clients
 
 ## Abstract
-Ethereum light clients are known to suffer from a probabilistic security model, but they are widely assumed to be secure under normal operating conditions. [^1]: Saanteri Paavolainen & Christopher Carr, "Security Properties of Light Clients on the Ethereum Blockchain", https://uwe-repository.worktribe.com/OutputFile/6764897, June 2020
-The idea is to have RPC-based wallet completely trustless by first syncing to the latest header of the beacon chain and then use the eth_getProof endpoint to get the balance plus a proof that it is actually part of the root hash that we obtained. Using Merkle Inclusion proofs to the latest block header allows us to verify that the data is correct. 
+Ethereum light clients are known to suffer from a probabilistic security model, but they are widely assumed to be secure under normal operating conditions. [^1]. The idea is to have RPC-based wallet completely trustless by first syncing to the latest header of the beacon chain and then use the eth_getProof endpoint to get the balance plus a proof that it is actually part of the root hash that we obtained. Using Merkle Inclusion proofs to the latest block header allows us to verify that the data is correct. 
 
 
 ## Scope
@@ -18,3 +17,6 @@ Will full nodes, the network participants are required to evaluate every transac
 
 ## How does this project benefit the greater Ethereum ecosystem?
 Since the research would be open-source, developers would be able to utilize these layer 2 light clients to build better and more secured dapps. Users would be able to would be able to verify transactions more easily and securely without having to utilized alot of resources for a full node or even to rely on "sort of central" light protocol servers. Also the ethereum ecosystem would be able to benefit on light clients not just verifying the transactions only for themeselves but maybe able to pass on those log messages to other users and contribute to a more decentralized system. 
+
+
+[^1]: Saanteri Paavolainen & Christopher Carr, "Security Properties of Light Clients on the Ethereum Blockchain", https://uwe-repository.worktribe.com/OutputFile/6764897, June 2020.
